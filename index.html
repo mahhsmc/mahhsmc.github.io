@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <h1></h1>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfólio — Mariana S M Coser</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    :root {
+      --rosa-escuro: #b21f66;
+      --rosa-medio: #e74c9c;
+      --rosa-claro: #ffb3d9;
+      --rosa-fundo: #ffe6f2;
+      --texto: #4a0035;
+    }
+
+    body {
+      font-family: "Fira Sans", sans-serif;
+      margin: 0;
+      background-color: var(--rosa-fundo);
+      color: var(--texto);
+    }
+
+    header {
+      background: linear-gradient(45deg, var(--rosa-escuro), var(--rosa-medio));
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 5px solid var(--rosa-claro);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: var(--rosa-escuro);
+    }
+
+    .projetos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      padding: 15px;
+      transition: 0.3s;
+      border: 2px solid var(--rosa-claro);
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      margin: 8px 0;
+      color: var(--rosa-escuro);
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #66324d;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background: var(--rosa-medio);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      transition: 0.2s;
+    }
+
+    .card a:hover {
+      background: var(--rosa-escuro);
+    }
+
+    footer {
+      margin-top: 40px;
+      background: var(--rosa-escuro);
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mariana S M Coser</h1>
+    <p>Portfólio — Meus projetos</p>
+  </header>
+
+  <section>
+    <h2>🌸 Meus Projetos</h2>
+
+    <div class="projetos">
+
+      <!-- Catálogo Bootstrap 5 -->
+      <div class="card">
+        <p>Projeto Catálogo Bootstrap 5</p>
+        <h3>Catálogo Bootstrap 5</h3>
+        <p>Projeto responsivo usando Bootstrap 5.</p>
+        <a href="https://github.com/mahhsmc/Catalogo-bootstrap-5" target="_blank">Ver no GitHub</a>
+      </div>
+
+      <!-- ToDo -->
+      <div class="card">
+        <p>Projeto ToDo</p>
+        <h3>ToDo App</h3>
+        <p>Aplicação de lista de tarefas simples e prática.</p>
+        <a href="https://github.com/mahhsmc/ToDo" target="_blank">Ver no GitHub</a>
+      </div>
+
+      <!-- Busca CEP -->
+      <div class="card">
+        <p>Busca CEP</p>
+        <h3>BuscaCEP</h3>
+        <p>Aplicação para consultar CEP usando API externa.</p>
+        <a href="https://github.com/mahhsmc/BuscaCEP" target="_blank">Ver no GitHub</a>
+      </div>
+
+      <!-- Cardápio -->
+      <div class="card">
+        <p>Projeto Cardápio</p>
+        <h3>Cardápio</h3>
+        <p>Projeto de cardápio — ideal para restaurantes ou lanchonetes.</p>
+        <a href="https://github.com/mahhsmc/Cardapio" target="_blank">Ver no GitHub</a>
+      </div>
+
+      <!-- Quiz -->
+      <div class="card">
+        <p>Projeto Quiz</p>
+        <h3>Quiz</h3>
+        <p>Aplicação de quiz interativo — teste seus conhecimentos!</p>
+        <a href="https://github.com/mahhsmc/quiz" target="_blank">Ver no GitHub</a>
+      </div>
+
+      <!-- Projeto Extra (espaço para adicionar futuro projeto) -->
+      <div class="card">
+        <p>Projeto Extra</p>
+        <h3>Projeto Extra</h3>
+        <p>Espaço reservado para adicionar mais um projeto seu.</p>
+        <a href="#" target="_blank">Ver Projeto</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 — Mariana S M Coser</p>
+  </footer>
+
+</body>
+</html>
