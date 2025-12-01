@@ -20,7 +20,8 @@
   <title>Portfólio — Mariana S M Coser</title>
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
 
     :root {
       --rosa-escuro: #b21f66;
@@ -42,12 +43,14 @@
       color: white;
       padding: 40px 20px;
       text-align: center;
-      border-bottom: 5px solid var(--rosa-claro);
-    }
+  border-bottom: 5px solid var(--rosa-claro);
+  }
 
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+  font-size: 2.5rem;
+  /* aplicar fonte apenas ao título do portfólio */
+  font-family: 'Playfair Display', serif;
     }
 
     header p {
@@ -60,6 +63,46 @@
       margin: 40px auto;
       padding: 20px;
     }
+
+    /* Seção Sobre Mim */
+    #sobre {
+      background: white;
+      border-radius: 12px;
+      margin: 30px auto;
+      padding: 24px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+      max-width: 900px;
+    }
+
+    .conteudo-sobre h2 {
+      margin-top: 0;
+      color: var(--rosa-escuro);
+      text-align: left;
+      font-size: 1.6rem;
+    }
+
+    .conteudo-sobre p {
+      color: #5b2440;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    .btn-contato {
+      display: inline-block;
+      padding: 8px 14px;
+      background: var(--rosa-medio);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.2s;
+      margin-top: 6px;
+    }
+
+    .btn-contato:hover {
+      background: var(--rosa-escuro);
+      transform: translateY(-2px);
+    }
+
 
     h2 {
       text-align: center;
@@ -78,8 +121,10 @@
       border-radius: 12px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
       padding: 15px;
-      transition: 0.3s;
-      border: 2px solid var(--rosa-claro);
+  transition: 0.3s;
+  border: 2px solid var(--rosa-claro);
+  display: flex;
+  flex-direction: column;
     }
 
     .card:hover {
@@ -113,6 +158,8 @@
       border-radius: 6px;
       font-size: 0.9rem;
       transition: 0.2s;
+  /* empurra o botão para o rodapé do card */
+  margin-top: auto;
     }
 
     .card a:hover {
@@ -135,6 +182,17 @@
     <p>Portfólio — Meus projetos</p>
   </header>
 
+  <!-- Seção Sobre Mim -->
+  <section id="sobre" class="sobre">
+    <div class="conteudo-sobre">
+  <h2>🍓 Sobre mim</h2>
+      <p>Meu nome é Mariana da Silva Muniz Coser, tenho 18 anos e atualmente sou aprendiz de TI no Senac de Novo Hamburgo (RS).</p>
+  <p>Já desenvolvi alguns projetos, como um catálogo, um cardápio no estilo iFood, uma lista de tarefas, um quiz, entre outros.</p>
+  <p>Você pode conferir todos os meus projetos nos links abaixo:</p>
+      <a class="btn-contato" href="mailto:msilvamunizcoser055@gmail.com">Entre em contato</a>
+    </div>
+  </section>
+
   <section>
     <h2>🌸 Meus Projetos</h2>
 
@@ -145,7 +203,7 @@
         <p>Projeto Catálogo Bootstrap 5</p>
         <h3>Catálogo Bootstrap 5</h3>
         <p>Projeto responsivo usando Bootstrap 5.</p>
-        <a href="https://github.com/mahhsmc/Catalogo-bootstrap-5" target="_blank">Ver no GitHub</a>
+  <a href="https://github.com/mahhsmc/Catalogo-bootstrap-5" target="_blank"><i class="bi bi-github"></i> Ver no GitHub</a>
       </div>
 
       <!-- ToDo -->
@@ -153,7 +211,7 @@
         <p>Projeto ToDo</p>
         <h3>ToDo App</h3>
         <p>Aplicação de lista de tarefas simples e prática.</p>
-        <a href="https://github.com/mahhsmc/ToDo" target="_blank">Ver no GitHub</a>
+  <a href="https://github.com/mahhsmc/ToDo" target="_blank"><i class="bi bi-github"></i> Ver no GitHub</a>
       </div>
 
       <!-- Busca CEP -->
@@ -161,7 +219,7 @@
         <p>Busca CEP</p>
         <h3>BuscaCEP</h3>
         <p>Aplicação para consultar CEP usando API externa.</p>
-        <a href="https://github.com/mahhsmc/BuscaCEP" target="_blank">Ver no GitHub</a>
+  <a href="https://github.com/mahhsmc/BuscaCEP" target="_blank"><i class="bi bi-github"></i> Ver no GitHub</a>
       </div>
 
       <!-- Cardápio -->
@@ -169,7 +227,7 @@
         <p>Projeto Cardápio</p>
         <h3>Cardápio</h3>
         <p>Projeto de cardápio — ideal para restaurantes ou lanchonetes.</p>
-        <a href="https://github.com/mahhsmc/Cardapio" target="_blank">Ver no GitHub</a>
+  <a href="https://github.com/mahhsmc/Cardapio" target="_blank"><i class="bi bi-github"></i> Ver no GitHub</a>
       </div>
 
       <!-- Quiz -->
@@ -177,7 +235,7 @@
         <p>Projeto Quiz</p>
         <h3>Quiz</h3>
         <p>Aplicação de quiz interativo — teste seus conhecimentos!</p>
-        <a href="https://github.com/mahhsmc/quiz" target="_blank">Ver no GitHub</a>
+  <a href="https://github.com/mahhsmc/quiz" target="_blank"><i class="bi bi-github"></i> Ver no GitHub</a>
       </div>
 
       <!-- Projeto Extra (espaço para adicionar futuro projeto) -->
