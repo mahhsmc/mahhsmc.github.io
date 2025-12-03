@@ -19,161 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfólio — Mariana S M Coser</title>
 
-  <style>
-  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
-
-    :root {
-      --rosa-escuro: #b21f66;
-      --rosa-medio: #e74c9c;
-      --rosa-claro: #ffb3d9;
-      --rosa-fundo: #ffe6f2;
-      --texto: #4a0035;
-    }
-
-    body {
-      font-family: "Fira Sans", sans-serif;
-      margin: 0;
-      background-color: var(--rosa-fundo);
-      color: var(--texto);
-    }
-
-    header {
-      background: linear-gradient(45deg, var(--rosa-escuro), var(--rosa-medio));
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-  border-bottom: 5px solid var(--rosa-claro);
-  }
-
-    header h1 {
-      margin: 0;
-  font-size: 2.5rem;
-  /* aplicar fonte apenas ao título do portfólio */
-  font-family: 'Playfair Display', serif;
-    }
-
-    header p {
-      margin-top: 10px;
-      font-size: 1.2rem;
-    }
-
-    section {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 20px;
-    }
-
-    /* Seção Sobre Mim */
-    #sobre {
-      background: white;
-      border-radius: 12px;
-      margin: 30px auto;
-      padding: 24px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-      max-width: 900px;
-    }
-
-    .conteudo-sobre h2 {
-      margin-top: 0;
-      color: var(--rosa-escuro);
-      text-align: left;
-      font-size: 1.6rem;
-    }
-
-    .conteudo-sobre p {
-      color: #5b2440;
-      line-height: 1.6;
-      margin-bottom: 12px;
-    }
-
-    .btn-contato {
-      display: inline-block;
-      padding: 8px 14px;
-      background: var(--rosa-medio);
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: 0.2s;
-      margin-top: 6px;
-    }
-
-    .btn-contato:hover {
-      background: var(--rosa-escuro);
-      transform: translateY(-2px);
-    }
-
-
-    h2 {
-      text-align: center;
-      margin-bottom: 30px;
-      color: var(--rosa-escuro);
-    }
-
-    .projetos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 25px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      padding: 15px;
-  transition: 0.3s;
-  border: 2px solid var(--rosa-claro);
-  display: flex;
-  flex-direction: column;
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-    }
-
-    .card img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 10px;
-    }
-
-    .card h3 {
-      margin: 8px 0;
-      color: var(--rosa-escuro);
-    }
-
-    .card p {
-      font-size: 0.9rem;
-      color: #66324d;
-    }
-
-    .card a {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 8px 12px;
-      background: var(--rosa-medio);
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      font-size: 0.9rem;
-      transition: 0.2s;
-  /* empurra o botão para o rodapé do card */
-  margin-top: auto;
-    }
-
-    .card a:hover {
-      background: var(--rosa-escuro);
-    }
-
-    footer {
-      margin-top: 40px;
-      background: var(--rosa-escuro);
-      padding: 20px;
-      color: white;
-      text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -182,6 +28,7 @@
     <p>Portfólio — Meus projetos</p>
   </header>
 
+  <main>
   <!-- Seção Sobre Mim -->
   <section id="sobre" class="sobre">
     <div class="conteudo-sobre">
@@ -189,7 +36,7 @@
       <p>Meu nome é Mariana da Silva Muniz Coser, tenho 18 anos e atualmente sou aprendiz de TI no Senac de Novo Hamburgo (RS).</p>
   <p>Já desenvolvi alguns projetos, como um catálogo, um cardápio no estilo iFood, uma lista de tarefas, um quiz, entre outros.</p>
   <p>Você pode conferir todos os meus projetos nos links abaixo:</p>
-      <a class="btn-contato" href="mailto:msilvamunizcoser055@gmail.com">Entre em contato</a>
+  <a class="btn-contato" href="contato.html">Entre em contato</a>
     </div>
   </section>
 
@@ -248,10 +95,13 @@
 
     </div>
   </section>
+  </main>
 
   <footer>
     <p>© 2025 — Mariana S M Coser</p>
   </footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>

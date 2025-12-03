@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+
+:root {
+  --rosa-escuro: #b21f66;
+  --rosa-medio: #e74c9c;
+  --rosa-claro: #ffb3d9;
+  --rosa-fundo: #ffe6f2;
+  --texto: #4a0035;
+}
+
+/* Base */
+body {
+  font-family: "Fira Sans", sans-serif;
+  margin: 0;
+  background-color: var(--rosa-fundo);
+  color: var(--texto);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main { flex: 1; }
+
+header {
+  background: linear-gradient(45deg, var(--rosa-escuro), var(--rosa-medio));
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 5px solid var(--rosa-claro);
+}
+
+header h1 { margin: 0; font-size: 2.5rem; font-family: 'Playfair Display', serif; }
+header p { margin-top: 10px; font-size: 1.2rem; }
+
+section { max-width: 1000px; margin: 40px auto; padding: 20px; }
+
+/* Sobre */
+#sobre { background: white; border-radius: 12px; margin: 30px auto; padding: 24px; box-shadow: 0 6px 18px rgba(0,0,0,0.06); max-width: 900px; }
+.conteudo-sobre h2 { margin-top: 0; color: var(--rosa-escuro); text-align: left; font-size: 1.6rem; }
+.conteudo-sobre p { color: #5b2440; line-height: 1.6; margin-bottom: 12px; }
+.btn-contato { display: inline-block; padding: 8px 14px; background: var(--rosa-medio); color: white; text-decoration: none; border-radius: 8px; transition: 0.2s; margin-top: 6px; }
+.btn-contato:hover { background: var(--rosa-escuro); transform: translateY(-2px); }
+
+/* Projetos */
+h2 { text-align: center; margin-bottom: 30px; color: var(--rosa-escuro); }
+.projetos { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; }
+.card { background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 15px; transition: 0.3s; border: 2px solid var(--rosa-claro); display:flex; flex-direction:column; }
+.card:hover { transform: translateY(-6px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
+.card img { width:100%; border-radius:10px; margin-bottom:10px; }
+.card h3 { margin: 8px 0; color: var(--rosa-escuro); }
+.card p { font-size: 0.9rem; color: #66324d; }
+.card a { display: inline-block; padding: 8px 12px; background: var(--rosa-medio); color: white; text-decoration: none; border-radius: 6px; font-size: 0.9rem; transition: 0.2s; margin-top: auto; }
+.card a:hover { background: var(--rosa-escuro); }
+
+/* links dentro do card de contato devem parecer botões */
+.contato-card .card-link { display: inline-block; padding: 8px 12px; background: var(--rosa-medio); color: white; text-decoration: none; border-radius: 6px; transition: 0.2s; }
+.contato-card .card-link:hover { background: var(--rosa-escuro); }
+
+/* Contato */
+body.contact-page { font-family: Arial, sans-serif; }
+.contato-list { list-style:none; padding:0; }
+.contato-list li { margin:10px 0; }
+.contato-list a i { margin-right:8px; vertical-align:middle }
+a.voltar { display:inline-block; margin-top:16px; color:var(--rosa-escuro); text-decoration:none }
+
+/* Card específico na página de contato */
+.contato-card { max-width: 520px; margin: 24px auto; padding: 18px; }
+
+/* Layout do card de contato
+  - manter o título (primeiro parágrafo) e o nome (h3) centralizados
+  - alinhar os demais elementos (email, instagram, telefone, botão) à esquerda
+*/
+.contato-card { text-align: center; }
+.contato-card p { text-align: left; margin: 8px 0; }
+.contato-card p:first-of-type { text-align: center; font-weight: 600; }
+.contato-card h3 { text-align: center; margin: 6px 0 12px 0; }
+.contato-card i { margin-right: 8px; vertical-align: middle }
+
+/* estilo do botão voltar dentro do card: fundo rosa e texto branco */
+.contato-card .voltar { display: inline-block; background: var(--rosa-medio); color: white; padding: 8px 12px; border-radius: 6px; text-decoration: none; margin-top: 12px; }
+
+.voltar { display:block; text-align:center; margin-top:18px }
+
+footer { margin-top: 40px; background: var(--rosa-escuro); padding: 20px; color:white; text-align:center }
