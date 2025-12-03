@@ -83,3 +83,50 @@ a.voltar { display:inline-block; margin-top:16px; color:var(--rosa-escuro); text
 .voltar { display:block; text-align:center; margin-top:18px }
 
 footer { margin-top: 40px; background: var(--rosa-escuro); padding: 20px; color:white; text-align:center }
+
+/* Responsividade */
+/* Tablets e dispositivos médios */
+@media (max-width: 900px) {
+  header { padding: 30px 16px; }
+  header h1 { font-size: 2rem; }
+  header p { font-size: 1rem; }
+  section { margin: 24px 16px; }
+  #sobre { padding: 18px; }
+  .conteudo-sobre h2 { font-size: 1.4rem; }
+  .projetos { gap: 18px; }
+  .card { padding: 12px; }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+  header { padding: 22px 12px; }
+  header h1 { font-size: 1.4rem; }
+  header p { font-size: 0.95rem; }
+  section { margin: 16px 12px; padding: 0; }
+  #sobre { padding: 14px; margin: 18px 8px; }
+  .conteudo-sobre h2 { font-size: 1.2rem; }
+  .projetos { grid-template-columns: 1fr; gap: 14px; }
+  .card { padding: 12px; }
+  .card h3 { font-size: 1.05rem; }
+  .card p { font-size: 0.9rem; }
+  /* Botões do card e contato em largura total no celular */
+  .card a, .contato-card .card-link, .btn-contato, .contato-card .voltar { display: block; width: 100%; box-sizing: border-box; text-align: center; }
+  .contato-card { padding: 12px; margin: 16px 12px; }
+  .contato-card p { text-align: left; }
+  .contato-card p:first-of-type { text-align: center; }
+}
+
+/* Transições de página: usar apenas overlay preto para controlar fade */
+html { opacity: 1; }
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --transition-duration: 0ms; }
+}
+
+/* overlay preto para transição */
+#page-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.85); pointer-events: none; z-index: 9999; opacity: 1; transition: opacity 220ms ease; }
+#page-overlay.hidden { opacity: 0; pointer-events: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  #page-overlay { transition: none; }
+}
